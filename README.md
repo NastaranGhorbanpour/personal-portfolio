@@ -1,11 +1,12 @@
 # Personal portfolio
 ### Designed & developed my personal portfolio using HTML & CSS
+#####Minimal & Clean UI 
 
-![wineryView](https://github.com/user-attachments/assets/de3ad456-e58d-4156-ab83-afc2ad418510)
+![Image](https://github.com/user-attachments/assets/3cb45fa0-1e0c-4e99-bbfe-da027c819a13)
  
 - [Demo Project](https://nastaranghorbanpour.github.io/MyFirstProject/)
 - Developed by Nastaran Ghorbanpour
-- Created - 2025-02-04
+- Created - 2025-02-16
 - Technologies Used : Html , css 
 - How to reach me : with my 
 [instagram](https://www.instagram.com/nestacode.lab/) and 
