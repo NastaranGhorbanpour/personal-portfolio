@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/font/css/fontello.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: inter;
+            src: url(assets/font/Inter/static/Inter_18pt-Light.ttf);
+        }
+
+        body {
+            font-family: inter;
+        }
+
+        main {
+            width: 100%;
+            height: 150vh;
+            padding: 100px 50px;
+            background-color: #EBF1F5;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+
+            >section {
+                background-color: #FFFFFF;
+                position: relative;
+                z-index: 9;
+                border-radius: 25px;
+                background-repeat: no-repeat;
+                box-shadow: 0 0 4px rgba(25, 25, 25, 0.172);
+                padding: 40px 20px;
+
+                &:hover {
+                    >h2 {
+                        color: rgba(17, 17, 17, 0.699);
+                    }
+
+
+                }
+
+                >h2 {
+                    color: #9BA1A0;
+                    font-size: 40px;
+                    text-transform: capitalize;
+                    font-family: inter;
+                    position: absolute;
+                    top: 20px;
+                    left: 10px;
+
+                }
+
+                >a {
+                    text-decoration: none;
+                    color: #9BA1A0;
+                    text-transform: uppercase;
+                    
+
+                    &:hover {
+                        color: rgba(17, 17, 17, 0.883);
+                    }
+
+                    >i {
+                        
+                        &:hover {
+                            color: rgba(17, 17, 17, 0.699);
+                            border: 1px solid rgba(17, 17, 17, 0.699);
+                            background-color: rgba(17, 17, 17, 0.244);
+                        }
+                    }
+
+                }
+                
+
+                &:nth-of-type(1) {
+                    grid-column: 1 / span 2;
+                    background-image: url(assets/img/bg1-1.svg);
+                    background-position: right;
+
+                    >h1 {
+                        font-size: 60px;
+                    }
+
+                    >a {
+                        >i {
+                            color: #9BA1A0;
+                            font-size: 20px;
+                            border: 1px solid #9BA1A0;
+                            padding: 5px;
+                            border-radius: 50%;
+                            position: absolute;
+                            bottom: 20px;
+                            right: none;
+                        }
+                        &:nth-of-type(1){
+                            >i{
+                                left: 25px;
+                            }
+                            
+                        }
+                        &:nth-of-type(2){
+                            >i{
+                                left: 85px;
+                            }
+                            
+                        }
+                        &:nth-of-type(3){
+                            >i{
+                                left: 145px;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    >img {
+
+                        border-radius: 50%;
+
+                        &:nth-of-type(2) {
+                            width: 160px;
+                            height: 160px;
+                            object-fit: cover;
+                            position: relative;
+                        }
+
+                        &:nth-of-type(1) {
+                            position: absolute;
+                            width: 210px;
+                            height: 210px;
+                            animation: rotate 10s infinite linear;
+                        }
+                    }
+
+                }
+
+                &:nth-of-type(3) {
+                    grid-column: 4 / span 2;
+                    background-image: url(assets/img/bg-2.svg);
+                    background-position: bottom;
+
+                    >p {
+                        color: #9BA1A0;
+                        font-size: 25px;
+                    }
+
+                    >a {
+                        &:nth-of-type(1){
+                            position: absolute;
+                            left: 10px;
+                            bottom: 20px;
+                        }
+                        &:nth-of-type(2){
+                            >i {
+                                color: #9BA1A0;
+                                font-size: 20px;
+                                border: 1px solid #9BA1A0;
+                                padding-inline: 10px;
+                                border-radius: 100px;
+                                position: absolute;
+                                right: 10px;
+                                bottom: 20px;
+                            }
+                        }
+                    }
+
+                }
+
+                &:nth-of-type(4) {
+                    grid-column: 1 / span 2;
+                    background-image: url(assets/img/books.avif);
+                    background-size: cover;
+                }
+
+                &:nth-of-type(5) {
+                    grid-column: 3 / span 2;
+                    background-image: url(assets/img/laptop.avif);
+                    background-size: cover;
+                }
+
+                &:nth-of-type(6) {
+                    background-image: url(assets/img/bg-3.svg);
+                    background-position: top;
+                    >a{
+                        position: absolute;
+                        left: 10px;
+                        bottom: 20px;
+                    }
+
+                }
+
+                &:nth-of-type(7) {
+                    grid-column: 1 / span 3;
+                    background-image: url(assets/img/bg-4.svg);
+                    background-position: left;
+
+                    >a{
+                        &:nth-of-type(1){
+                            position: absolute;
+                            left: 10px;
+                            bottom: 20px;
+                        }
+                        &:nth-of-type(2){
+                            >i {
+                                color: #9BA1A0;
+                                font-size: 20px;
+                                border: 1px solid #9BA1A0;
+                                padding-inline: 10px;
+                                border-radius: 100px;
+                                position: absolute;
+                                right: 10px;
+                                bottom: 20px;
+                            }
+                        }
+                    }
+                }
+                &:nth-of-type(8) {
+                    grid-column: 4 / span 2;
+                    background-image: url(assets/img/bg-5.svg);
+                    background-position: top right;
+                    background-image: url(assets/img/phone.avif);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+
+            @keyframes rotate {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Forntend-Devepoler</h1>
+            <a href="https://www.instagram.com/nestacode.lab/"><i class=" icon-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nastaran-ghorbanpour-027a7b349/"><i class=" icon-linkedin"></i>
+            </a>
+            <a href="https://github.com/NastaranGhorbanpour" ><i class="  icon-github-circled"></i>
+            </a>
+            
+        </section>
+        <section>
+            <img src="assets/img/animation.svg" alt="">
+            <img src="assets/img/me.JPG" alt="">
+        </section>
+        <section>
+            <p>I'm Nastaran, a frontend developer passionate about bringing designs to life with code</p>
+            <a href="">about me</a>
+            <a href=""><i class=" icon-right"></i></a>
+        </section>
+        <section></section>
+        <section></section>
+        <section>
+            <h2>see my latest work</h2>
+            <a href="">all projects</a>
+        </section>
+        <section>
+            <h2>let's work together</h2>
+            <a href="">get in touch</a>
+            <a href=""><i class="icon-right"></i>
+            </a>
+        </section>
+        <section>
+
+        </section>
+    </main>
+</body>
+
+</html>
