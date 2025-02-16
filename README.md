@@ -1,6 +1,6 @@
 # Personal portfolio
 ### Designed & developed my personal portfolio using HTML & CSS
-Minimal & Clean UI** 
+Minimal & Clean UI
 
 ![Image](https://github.com/user-attachments/assets/3cb45fa0-1e0c-4e99-bbfe-da027c819a13)
  
